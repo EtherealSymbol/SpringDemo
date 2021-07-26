@@ -1,2 +1,2 @@
-<#assign importStr="importStr"/>
-<#assign importStr1="importStr1"/>
+<#assign importStr="from import.ftl import str"/>
+<#assign importNum="from import.ftl import num"/>
