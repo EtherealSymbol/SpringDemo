@@ -3,6 +3,8 @@ package com.lenovo.spring.controllers;
 
 import java.util.*;
 
+import javax.servlet.http.HttpServletResponse;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +33,7 @@ public class FreemarkController {
 	
 	@RequestMapping("/")
 	public String home() {
+		logger.info("home...");
 		return "home";
 	}
 	
@@ -146,5 +149,12 @@ public class FreemarkController {
         }
         return list;
     }
+	
+	@RequestMapping("/nav")
+	public String navigation(HttpServletResponse response) {
+		response.setHeader("X-Frame-Options","DENY"); 
+		logger.info("navigation...");
+		return "navigation";
+	}
 	
 }
