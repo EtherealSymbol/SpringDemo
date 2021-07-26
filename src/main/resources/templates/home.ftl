@@ -61,7 +61,7 @@
     <div class="item fav"> <img src="img/home/bg_fav.png" alt="" width="199" height="199" class="circle"/> <a href="#" class="icon"></a>
       <h2>Love</h2>
       <ul>
-        <li><a href="#">Social</a></li>
+        <li><a href="nav">Navigation</a></li>
         <li><a href="#">Support</a></li>
         <li><a href="#">Comments</a></li>
       </ul>
