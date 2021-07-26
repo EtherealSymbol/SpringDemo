@@ -11,17 +11,22 @@
         }
         .exp {
             font-size: 12px;
-            color: lightgray;
+            color: green;
         }
     </style>
 </head> 
 <body> 
 	<h1>Hello Spring!</h1><br>
 	<h2>SpringBoot + Freemarker</h2>
+	<#-- 注释部分 -->
+	<#-- 使用插值 -->
 	<p>当前时间：${.now?string("yyyy-MM-dd HH:mm:ss.sss")}</p>
+	<h2>常用的freemarker语法</h2>
+	<p>下面详细介绍在ftl模板中如何使用列表、map、字符串、数字、日期、switch以及macro宏指令等语法。</p>
 	<dl>
     <dt>list长度：<span class="exp">${list?size}</span></dt>
     <dt>列表</dt>
+    	<#-- 使用FTL指令 -->
         <#list list as item>
         	<dd>${item }, 索引：${item_index }，hasNext：${item_has_next}</dd>
         </#list>
@@ -133,7 +138,7 @@
 	    <dd>
 	        <#import "import.ftl" as importObj>
 	        <p>${importObj.importStr}</p>
-	        <p>${importObj.importStr1}</p>
+	        <p>${importObj.importNum}</p>
 	    </dd>
 	</dl>
 	
