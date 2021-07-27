@@ -78,13 +78,22 @@
 		    <version>2.2.0</version>
 		</dependency>
 		
-		<!--devtools热部署-->
+		<!-- devtools热部署 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
             <scope>runtime</scope>
         </dependency>
+        
+        <!-- 加入SQL server依赖 -->
+        <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/sqljdbc4 -->
+		<dependency>
+		    <groupId>com.microsoft.sqlserver</groupId>
+		    <artifactId>sqljdbc4</artifactId>
+		    <version>4.0</version>
+		</dependency>
+
 		
 	</dependencies>
 
