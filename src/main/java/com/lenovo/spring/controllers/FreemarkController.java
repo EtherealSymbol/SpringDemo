@@ -152,8 +152,10 @@ public class FreemarkController {
 	
 	@RequestMapping("/nav")
 	public String navigation(HttpServletResponse response) {
-		response.setHeader("X-Frame-Options","ALLOWALL");
+//		response.setHeader("X-Frame-Options","DENY");
+//		response.setHeader("Access-Control-Allow-Origin", "https://www.baidu.com");
 //		response.setHeader("X-Frame-Options","ALLOW-FROM https://github.com/MysticalGuest/");
+		response.setHeader("X-Frame-Options","ALLOW-FROM https://www.baidu.com");
 		logger.info("navigation...");
 		return "navigation";
 	}
