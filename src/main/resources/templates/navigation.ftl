@@ -21,7 +21,7 @@
 		</div>
 
 		<div role="main" class="main">
-			<iframe src="https://www.baidu.com/" height="150px" frameborder="0"></iframe>
+			<iframe src="http://localhost:8080/nav" height="150px" frameborder="0"></iframe>
 			<a href="#nav" class="nav-toggle">Menu</a>
 			<h1>Prototype</h1>
 
