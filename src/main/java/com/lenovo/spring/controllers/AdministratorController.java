@@ -1,4 +1,4 @@
-package com.lenovo.spring.controllers;
+﻿package com.lenovo.spring.controllers;
 
 import java.util.List;
 
@@ -27,6 +27,20 @@ public class AdministratorController {
 		List<Administrator> allAdministrators = administratorService.getAllAdministrators();
 		logger.info("getAllAdministrators...");
 		return allAdministrators;
+	}
+	
+	// 恶意访问
+	@RequestMapping("/malicious")
+	public String maliciousAccess() {
+		logger.error("Malicious access...");
+		return "malicious_access";
+	}
+	
+	// 证书
+	@RequestMapping("/certificate")
+	public String antiViris() {
+		logger.error("certificate...");
+		return "certificate";
 	}
 
 }
